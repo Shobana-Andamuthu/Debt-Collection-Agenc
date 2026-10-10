@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -240,5 +241,854 @@
   </div>
 
 <script src="assets/js/main.js"></script>
+=======
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Dashboard | Equitas Recovery Partners</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/equitas-mark.svg">
+  <link rel="apple-touch-icon" href="assets/images/equitas-mark.svg">
+  <meta name="description" content="Equitas Recovery Partners client portal dashboard. Track collection placements, submit accounts, review remittance statements, and access compliance certificates.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="dash-app">
+
+    <!-- DASHBOARD SIDEBAR -->
+    <aside class="dash-sidebar" id="dashSidebar" aria-label="Client Dashboard Navigation">
+      
+      <div class="dash-sidebar-header">
+        <a href="index.html" class="brand-logo" aria-label="Equitas Recovery Homepage">
+          <div class="logo-symbol" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">EQUITAS</span>
+            <span class="logo-subtitle">Portal</span>
+          </div>
+        </a>
+
+        <button type="button" class="drawer-close-btn dash-sidebar-close" id="dashSidebarCloseBtn" aria-label="Close Sidebar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Client Profile Overview Badge -->
+      <div class="dash-client-badge">
+        <div class="dash-client-info">
+          <div class="dash-avatar-circle" aria-hidden="true">AC</div>
+          <div class="dash-client-meta">
+            <span class="dash-client-name">Acme Capital Partners</span>
+            <span class="dash-client-tier">Enterprise Creditor #8492</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Menu: 5 Core Sections -->
+      <nav class="dash-nav-menu" aria-label="Dashboard Sections">
+        <a href="#overview" class="dash-nav-link active" data-section="overview">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="7" height="9" x="3" y="3" rx="1"/>
+            <rect width="7" height="5" x="14" y="3" rx="1"/>
+            <rect width="7" height="9" x="14" y="12" rx="1"/>
+            <rect width="7" height="5" x="3" y="16" rx="1"/>
+          </svg>
+          <span>1. Overview</span>
+        </a>
+
+        <a href="#submitAccount" class="dash-nav-link" data-section="submitAccount">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 8v8"/>
+            <path d="M8 12h8"/>
+          </svg>
+          <span>2. Submit Account</span>
+        </a>
+
+        <a href="#caseTracking" class="dash-nav-link" data-section="caseTracking">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+            <path d="M15 2H9a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1Z"/>
+            <path d="m9 14 2 2 4-4"/>
+          </svg>
+          <span>3. Case Tracking</span>
+        </a>
+
+        <a href="#reportsSettlements" class="dash-nav-link" data-section="reportsSettlements">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" x2="12" y1="2" y2="22"/>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+          <span>4. Reports &amp; Settlements</span>
+        </a>
+
+        <a href="#complianceSupport" class="dash-nav-link" data-section="complianceSupport">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+          <span>5. Compliance &amp; Support</span>
+        </a>
+      </nav>
+
+      <a href="#submitAccount" class="btn btn-primary dash-sidebar-primary-action">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="12" y1="5" x2="12" y2="19"/>
+          <line x1="5" y1="12" x2="19" y2="12"/>
+        </svg>
+        <span>New Placement</span>
+      </a>
+
+      <!-- Sidebar Controls & Logout -->
+      <div class="dash-sidebar-footer">
+        <a href="login.html" class="btn btn-outline-white btn-sm" style="width: 100%; justify-content: center; color: var(--text-primary); border-color: var(--border-color);" id="dashLogoutBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+            <polyline points="16 17 21 12 16 7"/>
+            <line x1="21" x2="9" y1="12" y2="12"/>
+          </svg>
+          <span>Sign Out</span>
+        </a>
+      </div>
+
+    </aside>
+
+    <!-- DASHBOARD MAIN CONTENT AREA -->
+    <div class="dash-main-area">
+
+      <!-- Top Dashboard Bar -->
+      <header class="dash-topbar">
+        <div class="dash-topbar-left">
+          <button type="button" class="hamburger-btn dash-hamburger-btn" id="dashHamburgerBtn" aria-label="Open sidebar navigation" aria-controls="dashSidebar" aria-expanded="false" style="display: none;">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a href="index.html" class="brand-logo dash-topbar-brand" aria-label="Equitas Recovery homepage">
+            <span class="logo-symbol" aria-hidden="true">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </span>
+            <span class="logo-text">
+              <span class="logo-title">EQUITAS</span>
+              <span class="logo-subtitle">Client Portal</span>
+            </span>
+          </a>
+        </div>
+
+        <div class="dash-topbar-right">
+          <div class="dashboard-controls" aria-label="Display settings">
+            <button type="button" class="control-btn rtl-toggle-btn" aria-label="Switch to RTL layout" title="Toggle RTL/LTR">
+              <span class="rtl-badge">RTL</span>
+            </button>
+            <button type="button" class="control-btn theme-toggle-btn" aria-label="Switch to dark mode" title="Toggle theme">
+              <span aria-hidden="true">Theme</span>
+            </button>
+          </div>
+
+          <div class="dash-profile">
+            <button type="button" class="dash-profile-trigger" id="dashProfileTrigger" aria-label="Open profile menu" aria-controls="dashProfileMenu" aria-expanded="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M5 21a7 7 0 0 1 14 0"/>
+              </svg>
+              <span class="dash-profile-trigger-label">Profile</span>
+              <svg class="dash-profile-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="m7 10 5 5 5-5"/>
+              </svg>
+            </button>
+            <div class="dash-profile-menu" id="dashProfileMenu" role="menu" aria-labelledby="dashProfileTrigger" hidden>
+              <div class="dash-profile-menu-identity">
+                <span class="dash-profile-avatar" aria-hidden="true">AC</span>
+                <span>
+                  <strong>Acme Capital Partners</strong>
+                  <small>Enterprise Creditor #8492</small>
+                </span>
+              </div>
+              <a href="login.html" class="dash-profile-signout" role="menuitem">Sign out</a>
+            </div>
+          </div>
+
+          <a href="#submitAccount" class="btn btn-primary btn-sm dash-primary-action">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="12" y1="5" x2="12" y2="19"/>
+              <line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+            <span>New Placement</span>
+          </a>
+        </div>
+      </header>
+
+      <!-- Main Dashboard Content Container -->
+      <main class="dash-body-content">
+
+        <!-- Mandatory Demo Environment Disclaimer -->
+        <div class="dash-demo-banner" role="region" aria-label="Demonstration Environment Notice">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="8" x2="12" y2="12"/>
+            <line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+          <p>
+            <strong>Simulated Client Environment:</strong> This dashboard is populated with realistic demonstration records for interactive review. No actual sensitive consumer or financial records are stored or exposed.
+          </p>
+        </div>
+
+        <!-- ==========================================================================
+             SECTION 1: OVERVIEW & PERFORMANCE METRICS
+             ========================================================================== -->
+        <section class="dash-section" id="overview">
+          <div class="dash-section-header">
+            <div>
+              <h2>1. Portfolio Overview &amp; Key Metrics</h2>
+              <p>Real-time aggregate summary across all active, in-mediation, and resolved debt placements.</p>
+            </div>
+            <div class="badge badge-accent">Live Snapshot: Oct 2026</div>
+          </div>
+
+          <!-- 4 Metrics Cards (Tablet: 2 per row) -->
+          <div class="dash-metric-grid">
+            
+            <div class="dash-metric-card">
+              <div class="dash-metric-top">
+                <span class="dash-metric-title">Active Placements</span>
+                <div class="dash-metric-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="5" rx="2"/><path d="M2 10h20"/></svg>
+                </div>
+              </div>
+              <div class="dash-metric-val" id="metricActiveCount">124</div>
+              <div class="dash-metric-trend trend-up">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+                <span>+8 new accounts this month</span>
+              </div>
+            </div>
+
+            <div class="dash-metric-card">
+              <div class="dash-metric-top">
+                <span class="dash-metric-title">Total Recovered YTD</span>
+                <div class="dash-metric-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+              </div>
+              <div class="dash-metric-val" id="metricRecoveredAmount">$842,500</div>
+              <div class="dash-metric-trend trend-up">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+                <span>+$128,400 past 30 days</span>
+              </div>
+            </div>
+
+            <div class="dash-metric-card">
+              <div class="dash-metric-top">
+                <span class="dash-metric-title">Recovery Success Rate</span>
+                <div class="dash-metric-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </div>
+              </div>
+              <div class="dash-metric-val">76.8%</div>
+              <div class="dash-metric-trend trend-up">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+                <span>+4.2% vs industry avg</span>
+              </div>
+            </div>
+
+            <div class="dash-metric-card">
+              <div class="dash-metric-top">
+                <span class="dash-metric-title">Avg. Days to Settlement</span>
+                <div class="dash-metric-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+              </div>
+              <div class="dash-metric-val">32 Days</div>
+              <div class="dash-metric-trend trend-neutral">
+                <span>Fast mediation timeline</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Activity & Status Breakdown Card -->
+          <div class="dash-card">
+            <h3>Recent Portfolio Operations</h3>
+            <p class="card-desc">Audit trail of communications, validated settlements, and new file intakes.</p>
+            
+            <div class="table-responsive-wrapper">
+              <table class="dash-table">
+                <thead>
+                  <tr>
+                    <th>Timestamp</th>
+                    <th>Case Ref</th>
+                    <th>Account Holder</th>
+                    <th>Operational Event</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Today, 10:45 AM</td>
+                    <td><strong>#EQ-84920</strong></td>
+                    <td>Vanguard Logistics LLC</td>
+                    <td>Structured 3-month repayment agreement finalized</td>
+                    <td><span class="status-pill status-plan"><span class="status-dot-sm"></span>Plan Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>Yesterday, 03:15 PM</td>
+                    <td><strong>#EQ-84918</strong></td>
+                    <td>Pinnacle Retail Group</td>
+                    <td>Net wire remittance disbursed to Acme Capital</td>
+                    <td><span class="status-pill status-settled"><span class="status-dot-sm"></span>Disbursed</span></td>
+                  </tr>
+                  <tr>
+                    <td>Oct 07, 2026</td>
+                    <td><strong>#EQ-84915</strong></td>
+                    <td>Summit Medical Supplies</td>
+                    <td>First-demand notification delivered via certified channel</td>
+                    <td><span class="status-pill status-demand"><span class="status-dot-sm"></span>Demand Sent</span></td>
+                  </tr>
+                  <tr>
+                    <td>Oct 05, 2026</td>
+                    <td><strong>#EQ-84912</strong></td>
+                    <td>Cascade Tech Solutions</td>
+                    <td>Account validation packet confirmed and assigned to lead</td>
+                    <td><span class="status-pill status-mediation"><span class="status-dot-sm"></span>In Mediation</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+             SECTION 2: SUBMIT ACCOUNT FOR COLLECTION
+             ========================================================================== -->
+        <section class="dash-section" id="submitAccount">
+          <div class="dash-section-header">
+            <div>
+              <h2>2. Submit New Account for Collection</h2>
+              <p>Transmit an outstanding balance file for immediate verification and compliant mediation onboarding.</p>
+            </div>
+          </div>
+
+          <div class="dash-card">
+            <form id="dashSubmitAccountForm" novalidate>
+              <div class="contact-form-grid">
+                
+                <!-- Debtor Reference -->
+                <div class="form-group">
+                  <label for="subAccountRef" class="form-label">Debtor / Account Reference *</label>
+                  <input type="text" id="subAccountRef" name="accountRef" class="form-input" placeholder="e.g. INV-2026-9042 or Apex Dynamics" required>
+                  <span class="form-help-text">Internal invoice number or organization name</span>
+                </div>
+
+                <!-- Account Type -->
+                <div class="form-group">
+                  <label for="subAccountType" class="form-label">Account Category *</label>
+                  <select id="subAccountType" name="accountType" class="form-select" required>
+                    <option value="">Select account classification...</option>
+                    <option value="Commercial B2B Trade">Commercial B2B Trade</option>
+                    <option value="Commercial Corporate Debt">Commercial Corporate Debt</option>
+                    <option value="Consumer Professional Services">Consumer Professional Services</option>
+                    <option value="Medical &amp; Healthcare">Medical &amp; Healthcare</option>
+                    <option value="Contractual Retainer">Contractual Retainer</option>
+                  </select>
+                </div>
+
+                <!-- Outstanding Balance -->
+                <div class="form-group">
+                  <label for="subAccountBalance" class="form-label">Outstanding Balance (USD) *</label>
+                  <input type="number" id="subAccountBalance" name="balance" class="form-input" placeholder="15000" min="100" step="50" required>
+                  <span class="form-help-text">Total principal due for recovery</span>
+                </div>
+
+                <!-- Relevant Dates -->
+                <div class="form-group">
+                  <label for="subDefaultDate" class="form-label">Default / Delinquency Date *</label>
+                  <input type="date" id="subDefaultDate" name="defaultDate" class="form-input" required>
+                  <span class="form-help-text">Date of original default or non-payment</span>
+                </div>
+
+                <!-- Supporting Documentation Upload Dropzone -->
+                <div class="form-group form-full-width">
+                  <label class="form-label">Supporting Documentation (Invoices, Contracts, Statements)</label>
+                  <div class="file-dropzone-box" id="fileDropzone">
+                    <div class="dropzone-icon" aria-hidden="true">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="17 8 12 3 7 8"/>
+                        <line x1="12" x2="12" y1="3" y2="15"/>
+                      </svg>
+                    </div>
+                    <p class="primary-msg">Drag &amp; drop files here, or click to browse</p>
+                    <p class="secondary-msg">Supports PDF, XLSX, CSV, TIFF up to 25MB (Encrypted in transit)</p>
+                    <input type="file" id="subDocFile" style="display: none;" accept=".pdf,.xlsx,.csv,.docx,.tiff,.png,.jpg">
+                    <div class="file-selected-indicator" id="fileSelectedMsg">Selected: <span id="fileNameDisplay">invoice_records.pdf</span></div>
+                  </div>
+                </div>
+
+                <!-- Notes / Special Instructions -->
+                <div class="form-group form-full-width">
+                  <label for="subAccountNotes" class="form-label">Account Notes &amp; Special Instructions</label>
+                  <textarea id="subAccountNotes" name="notes" class="form-textarea" rows="3" placeholder="Provide relevant dispute history, prior contact notes, or preferred resolution milestones..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-full-width" style="margin-top: 0.5rem;">
+                  <button type="submit" class="btn btn-primary btn-lg" id="submitNewAccountBtn">
+                    <span>Submit Account for Recovery</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                      <line x1="5" y1="12" x2="19" y2="12"/>
+                      <polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Status Feedback -->
+                <div class="form-full-width">
+                  <div class="form-status-msg" id="submitAccountStatus" role="status" aria-live="polite"></div>
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+             SECTION 3: CASE TRACKING
+             ========================================================================== -->
+        <section class="dash-section" id="caseTracking">
+          <div class="dash-section-header">
+            <div>
+              <h2>3. Case Tracking &amp; Account Statuses</h2>
+              <p>Monitor real-time mediation milestones, scheduled settlements, and communication logs.</p>
+            </div>
+          </div>
+
+          <div class="dash-card">
+            
+            <!-- Filter & Search Toolbar -->
+            <div class="dash-filters-row">
+              <div class="dash-search-box dash-case-search">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <input type="text" placeholder="Filter by case reference or debtor..." id="caseFilterInput">
+              </div>
+
+              <div class="dash-filter-controls">
+                <div class="dash-filter-field">
+                  <label for="caseStatusFilter">Status</label>
+                  <select id="caseStatusFilter" class="dash-filter-select">
+                    <option value="ALL">All Statuses</option>
+                    <option value="In Mediation">In Mediation</option>
+                    <option value="Demand Sent">Demand Sent</option>
+                    <option value="Plan Active">Plan Active</option>
+                    <option value="Settled">Settled</option>
+                  </select>
+                </div>
+
+                <div class="dash-filter-field">
+                  <label for="caseCategoryFilter">Category</label>
+                  <select id="caseCategoryFilter" class="dash-filter-select">
+                    <option value="ALL">All Categories</option>
+                    <option value="Commercial B2B">Commercial B2B</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Services">Services</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Case Table -->
+            <div class="table-responsive-wrapper">
+              <table class="dash-table" id="caseTrackingTable">
+                <thead>
+                  <tr>
+                    <th>Case Ref</th>
+                    <th>Debtor Reference</th>
+                    <th>Category</th>
+                    <th>Balance</th>
+                    <th>Recovered</th>
+                    <th>Status</th>
+                    <th>Last Activity</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="caseTableBody">
+                  <tr data-status="Plan Active" data-category="Commercial B2B">
+                    <td><strong>#EQ-84920</strong></td>
+                    <td>Vanguard Logistics LLC</td>
+                    <td>Commercial B2B</td>
+                    <td>$45,000</td>
+                    <td style="color: var(--success); font-weight: 600;">$15,000 (33%)</td>
+                    <td><span class="status-pill status-plan"><span class="status-dot-sm"></span>Plan Active</span></td>
+                    <td>Today, 10:45 AM</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-white btn-sm view-case-btn" data-id="EQ-84920" data-debtor="Vanguard Logistics LLC" data-balance="$45,000" data-status="Plan Active" data-lead="Eleanor Vance" data-date="Oct 09, 2026">
+                        Details
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr data-status="Settled" data-category="Services">
+                    <td><strong>#EQ-84918</strong></td>
+                    <td>Pinnacle Retail Group</td>
+                    <td>Services</td>
+                    <td>$28,500</td>
+                    <td style="color: var(--success); font-weight: 600;">$28,500 (100%)</td>
+                    <td><span class="status-pill status-settled"><span class="status-dot-sm"></span>Settled</span></td>
+                    <td>Oct 08, 2026</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-white btn-sm view-case-btn" data-id="EQ-84918" data-debtor="Pinnacle Retail Group" data-balance="$28,500" data-status="Settled" data-lead="David Miller" data-date="Oct 08, 2026">
+                        Details
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr data-status="Demand Sent" data-category="Healthcare">
+                    <td><strong>#EQ-84915</strong></td>
+                    <td>Summit Medical Supplies</td>
+                    <td>Healthcare</td>
+                    <td>$19,200</td>
+                    <td style="color: var(--text-muted);">$0 (0%)</td>
+                    <td><span class="status-pill status-demand"><span class="status-dot-sm"></span>Demand Sent</span></td>
+                    <td>Oct 07, 2026</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-white btn-sm view-case-btn" data-id="EQ-84915" data-debtor="Summit Medical Supplies" data-balance="$19,200" data-status="Demand Sent" data-lead="Eleanor Vance" data-date="Oct 07, 2026">
+                        Details
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr data-status="In Mediation" data-category="Commercial B2B">
+                    <td><strong>#EQ-84912</strong></td>
+                    <td>Cascade Tech Solutions</td>
+                    <td>Commercial B2B</td>
+                    <td>$62,000</td>
+                    <td style="color: var(--text-muted);">$0 (0%)</td>
+                    <td><span class="status-pill status-mediation"><span class="status-dot-sm"></span>In Mediation</span></td>
+                    <td>Oct 05, 2026</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-white btn-sm view-case-btn" data-id="EQ-84912" data-debtor="Cascade Tech Solutions" data-balance="$62,000" data-status="In Mediation" data-lead="Marcus Sterling" data-date="Oct 05, 2026">
+                        Details
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr data-status="Settled" data-category="Commercial B2B">
+                    <td><strong>#EQ-84909</strong></td>
+                    <td>Horizon Freightways</td>
+                    <td>Commercial B2B</td>
+                    <td>$34,000</td>
+                    <td style="color: var(--success); font-weight: 600;">$34,000 (100%)</td>
+                    <td><span class="status-pill status-settled"><span class="status-dot-sm"></span>Settled</span></td>
+                    <td>Oct 02, 2026</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-white btn-sm view-case-btn" data-id="EQ-84909" data-debtor="Horizon Freightways" data-balance="$34,000" data-status="Settled" data-lead="David Miller" data-date="Oct 02, 2026">
+                        Details
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+             SECTION 4: REPORTS AND SETTLEMENT RECORDS
+             ========================================================================== -->
+        <section class="dash-section" id="reportsSettlements">
+          <div class="dash-section-header">
+            <div>
+              <h2>4. Performance Reports &amp; Settlement Records</h2>
+              <p>Auditable remittance batches, fee deduction itemizations, and historical performance charts.</p>
+            </div>
+          </div>
+
+          <!-- Visual Bar Chart: Monthly Recovery Trends -->
+          <div class="dash-card">
+            <div class="dash-chart-header">
+              <h3>6-Month Recovery Volume Performance</h3>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">Amounts in Thousand USD ($k)</span>
+            </div>
+
+            <div class="dash-bar-chart" aria-label="Monthly Recovery Trend Chart">
+              <div class="dash-chart-col">
+                <span class="chart-bar-val">$98k</span>
+                <div class="chart-bar-fill" style="height: 55%;" title="May 2026: $98,000"></div>
+                <span class="chart-bar-label">May</span>
+              </div>
+              <div class="dash-chart-col">
+                <span class="chart-bar-val">$112k</span>
+                <div class="chart-bar-fill" style="height: 62%;" title="Jun 2026: $112,000"></div>
+                <span class="chart-bar-label">Jun</span>
+              </div>
+              <div class="dash-chart-col">
+                <span class="chart-bar-val">$135k</span>
+                <div class="chart-bar-fill" style="height: 75%;" title="Jul 2026: $135,000"></div>
+                <span class="chart-bar-label">Jul</span>
+              </div>
+              <div class="dash-chart-col">
+                <span class="chart-bar-val">$148k</span>
+                <div class="chart-bar-fill" style="height: 82%;" title="Aug 2026: $148,000"></div>
+                <span class="chart-bar-label">Aug</span>
+              </div>
+              <div class="dash-chart-col">
+                <span class="chart-bar-val">$165k</span>
+                <div class="chart-bar-fill" style="height: 92%;" title="Sep 2026: $165,000"></div>
+                <span class="chart-bar-label">Sep</span>
+              </div>
+              <div class="dash-chart-col">
+                <span class="chart-bar-val" style="color: var(--accent-teal);">$184k</span>
+                <div class="chart-bar-fill" style="height: 100%; background: var(--accent-teal);" title="Oct 2026 (Projected): $184,000"></div>
+                <span class="chart-bar-label" style="font-weight: 700;">Oct (Mtd)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Settlement Remittance Table -->
+          <div class="dash-card">
+            <h3>Settlement &amp; Remittance Ledger</h3>
+            <p class="card-desc">Itemized account disbursements with verified agency contingency fees.</p>
+
+            <div class="table-responsive-wrapper">
+              <table class="dash-table">
+                <thead>
+                  <tr>
+                    <th>Batch ID</th>
+                    <th>Remittance Date</th>
+                    <th>Accounts Covered</th>
+                    <th>Gross Recovered</th>
+                    <th>Agency Fee (18%)</th>
+                    <th>Net Client Remittance</th>
+                    <th>Disbursement Status</th>
+                    <th>Receipt</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>#BAT-2026-10A</strong></td>
+                    <td>Oct 08, 2026</td>
+                    <td>3 Accounts</td>
+                    <td>$62,500.00</td>
+                    <td>$11,250.00</td>
+                    <td style="font-weight: 700; color: var(--primary-600);">$51,250.00</td>
+                    <td><span class="status-pill status-disbursed"><span class="status-dot-sm"></span>Disbursed</span></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-white btn-sm" onclick="alert('Demo: Remittance statement PDF downloaded.');">
+                        Download PDF
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>#BAT-2026-09B</strong></td>
+                    <td>Sep 24, 2026</td>
+                    <td>4 Accounts</td>
+                    <td>$84,000.00</td>
+                    <td>$15,120.00</td>
+                    <td style="font-weight: 700; color: var(--primary-600);">$68,880.00</td>
+                    <td><span class="status-pill status-disbursed"><span class="status-dot-sm"></span>Disbursed</span></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-white btn-sm" onclick="alert('Demo: Remittance statement PDF downloaded.');">
+                        Download PDF
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>#BAT-2026-09A</strong></td>
+                    <td>Sep 10, 2026</td>
+                    <td>2 Accounts</td>
+                    <td>$45,200.00</td>
+                    <td>$8,136.00</td>
+                    <td style="font-weight: 700; color: var(--primary-600);">$37,064.00</td>
+                    <td><span class="status-pill status-disbursed"><span class="status-dot-sm"></span>Disbursed</span></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-white btn-sm" onclick="alert('Demo: Remittance statement PDF downloaded.');">
+                        Download PDF
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+             SECTION 5: COMPLIANCE DOCUMENTS AND CLIENT SUPPORT
+             ========================================================================== -->
+        <section class="dash-section" id="complianceSupport">
+          <div class="dash-section-header">
+            <div>
+              <h2>5. Compliance Documents &amp; Client Support</h2>
+              <p>Download audited compliance documentation and connect directly with your dedicated account manager.</p>
+            </div>
+          </div>
+
+          <!-- Grid: Documents & Dedicated Lead -->
+          <div class="dedicated-lead-grid">
+            
+            <!-- Left: Downloadable Documents -->
+            <div class="dash-card" style="margin-bottom: 0;">
+              <h3>Verified Compliance Certificates</h3>
+              <p class="card-desc">Annual audit packages, security attestations, and licensing verification files.</p>
+
+              <div class="compliance-docs-grid" style="grid-template-columns: 1fr;">
+                <div class="doc-download-card">
+                  <div class="doc-info">
+                    <div class="doc-icon" aria-hidden="true">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    </div>
+                    <div class="doc-text">
+                      <h4>SOC 2 Type II Security Report (2026)</h4>
+                      <span>PDF Document &bull; Verified Dec 2025</span>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-secondary btn-sm" onclick="alert('Demo: SOC 2 Type II report downloaded.');">Download</button>
+                </div>
+
+                <div class="doc-download-card">
+                  <div class="doc-info">
+                    <div class="doc-icon" aria-hidden="true">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="doc-text">
+                      <h4>FDCPA &amp; Reg F Compliance Attestation</h4>
+                      <span>PDF Document &bull; Updated Q3 2026</span>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-secondary btn-sm" onclick="alert('Demo: FDCPA attestation downloaded.');">Download</button>
+                </div>
+
+                <div class="doc-download-card">
+                  <div class="doc-info">
+                    <div class="doc-icon" aria-hidden="true">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/></svg>
+                    </div>
+                    <div class="doc-text">
+                      <h4>Client Data Processing Agreement (DPA)</h4>
+                      <span>Signed Executed Agreement</span>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-secondary btn-sm" onclick="alert('Demo: DPA agreement downloaded.');">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Dedicated Account Lead & Support Desk -->
+            <div class="dash-card" style="margin-bottom: 0;">
+              <h3>Assigned Account Lead</h3>
+              <p class="card-desc">Your dedicated point of contact for case escalations and custom reporting.</p>
+
+              <div class="lead-profile-card">
+                <div class="lead-header-row">
+                  <div class="lead-avatar" aria-hidden="true">EV</div>
+                  <div class="lead-details">
+                    <h4>Eleanor Vance</h4>
+                    <span>Senior Portfolio Account Director</span>
+                  </div>
+                </div>
+
+                <div style="font-size: 0.84rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem;">
+                  <div><strong>Direct Line:</strong> (800) 555-0199 ext. 402</div>
+                  <div><strong>Email:</strong> e.vance@equitasrecovery.com</div>
+                  <div><strong>Office Hours:</strong> Mon–Fri, 8:00 AM – 5:30 PM CST</div>
+                </div>
+
+                <form id="dashSupportInquiryForm" style="margin-top: 0.5rem;" novalidate>
+                  <div class="form-group" style="margin-bottom: 0.75rem;">
+                    <label for="dashSupportMsg" class="form-label">Send Priority Note to Account Director</label>
+                    <textarea id="dashSupportMsg" name="message" class="form-textarea" rows="2" placeholder="Ask a question or request custom report batch..." required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-sm btn-block">
+                    <span>Send Message</span>
+                  </button>
+                  <div class="form-status-msg" id="dashSupportStatus" role="status" aria-live="polite" style="margin-top: 0.5rem;"></div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+  </div>
+
+  <!-- Interactive Case Details Modal / Drawer -->
+  <div class="case-modal-overlay" id="caseDetailsModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalCaseTitle">
+    <div class="case-modal-box">
+      <div class="case-modal-header">
+        <h3 id="modalCaseTitle">Case Details: #EQ-84920</h3>
+        <button type="button" class="drawer-close-btn" id="modalCloseBtn" aria-label="Close Case Details">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="case-modal-rows">
+        <div class="modal-detail-row">
+          <span class="label">Debtor Organization:</span>
+          <span class="value" id="modalDebtorName">Vanguard Logistics LLC</span>
+        </div>
+        <div class="modal-detail-row">
+          <span class="label">Total Original Balance:</span>
+          <span class="value" id="modalBalance">$45,000.00</span>
+        </div>
+        <div class="modal-detail-row">
+          <span class="label">Current Status:</span>
+          <span class="value" id="modalStatus">Plan Active</span>
+        </div>
+        <div class="modal-detail-row">
+          <span class="label">Assigned Recovery Lead:</span>
+          <span class="value" id="modalLead">Eleanor Vance</span>
+        </div>
+        <div class="modal-detail-row">
+          <span class="label">Last Action Date:</span>
+          <span class="value" id="modalDate">Oct 09, 2026</span>
+        </div>
+        <div class="modal-detail-row">
+          <span class="label">Compliance Check:</span>
+          <span class="value" style="color: var(--success);">Passed (SOC 2 Verified)</span>
+        </div>
+      </div>
+
+      <div style="background-color: var(--bg-subtle); border-radius: var(--radius-sm); padding: 0.85rem; margin-bottom: 1.25rem;">
+        <strong style="font-size: 0.82rem; color: var(--text-primary); display: block; margin-bottom: 0.25rem;">Audit &amp; Communication History:</strong>
+        <p style="font-size: 0.78rem; color: var(--text-secondary); line-height: 1.45;">
+          Debtor acknowledged debt on Oct 02. Mutually agreed to 3 installments of $15,000. First installment received and verified in escrow on Oct 09.
+        </p>
+      </div>
+
+      <button type="button" class="btn btn-secondary btn-block" id="modalDismissBtn">
+        <span>Close Case Details</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m18 15-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+>>>>>>> f8cb4a1 (first commit)
 </body>
 </html>
