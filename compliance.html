@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compliance &amp; Licensing | Equitas Recovery Partners</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/equitas-mark.svg">
+  <link rel="apple-touch-icon" href="assets/images/equitas-mark.svg">
+  <meta name="description" content="Learn about our commitment to ethical debt recovery, statutory compliance (FDCPA, FCRA, TCPA), data security protocols, and consumer protection rights.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       SHARED HEADER
+       ========================================================================= -->
+  <header class="site-header" id="mainHeader">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Equitas Home">
+        <div class="logo-symbol" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">EQUITAS</span>
+          <span class="logo-subtitle">Recovery</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" id="homeDropdownBtn" aria-haspopup="true" aria-expanded="false">
+              <span>Home</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6"/>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="index.html" class="dropdown-item">
+                <span>Home 1 (Corporate)</span>
+              </a>
+              <a href="home-2.html" class="dropdown-item">
+                <span>Home 2 (Enterprise)</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="compliance.html" class="nav-link active">Compliance</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Utilities -->
+      <div class="header-actions">
+        <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR">
+          <span class="rtl-badge">RTL</span>
+        </button>
+
+        <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle theme" title="Toggle Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+          </svg>
+        </button>
+
+        <a href="login.html" class="btn btn-secondary btn-sm" id="clientPortalBtn">
+          <span>Portal</span>
+        </a>
+
+        <a href="contact.html" class="btn btn-primary btn-sm" id="headerInquiryBtn">
+          <span>Contact Us</span>
+        </a>
+
+        <button type="button" class="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" role="dialog" aria-modal="true" aria-label="Mobile Menu">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="logo-symbol" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">EQUITAS</span>
+        </div>
+      </div>
+      <button type="button" class="drawer-close-btn" aria-label="Close menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-links">
+      <div class="drawer-home-group">
+        <button type="button" class="drawer-link drawer-home-toggle" aria-controls="drawerHomeMenu" aria-expanded="false">
+          <span>Home</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>
+        </button>
+        <div class="drawer-home-menu" id="drawerHomeMenu" hidden>
+          <a href="index.html" class="drawer-link" data-home-page="index.html">Home 1 (Corporate)</a>
+          <a href="home-2.html" class="drawer-link" data-home-page="home-2.html">Home 2 (Enterprise)</a>
+        </div>
+      </div>
+      <a href="services.html" class="drawer-link">Services</a>
+      <a href="compliance.html" class="drawer-link active">Compliance &amp; Licensing</a>
+      <a href="pricing.html" class="drawer-link">Pricing &amp; Plans</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+      <a href="contact.html" class="drawer-link">Contact</a>
+      <a href="dashboard.html" class="drawer-link">Dashboard</a>
+    </div>
+
+    <div class="drawer-actions">
+      <div class="drawer-controls-row">
+        <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle theme in drawer" style="width: 48%; height: 38px;">
+          <span>Theme</span>
+        </button>
+        <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle RTL in drawer" style="width: 48%; height: 38px;">
+          <span>RTL</span>
+        </button>
+      </div>
+      <a href="login.html" class="btn btn-secondary btn-block">Client Portal</a>
+      <a href="contact.html" class="btn btn-primary btn-block">Submit Dispute or Inquiry</a>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- =========================================================================
+         SECTION 1: COMPLIANCE HERO
+         ========================================================================= -->
+    <section class="inner-hero compliance-hero" id="complianceHero" aria-labelledby="compHeroHeadline">
+      <div class="container">
+        <div class="inner-hero-content">
+          <nav class="page-breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-sep" aria-hidden="true">/</span>
+            <span aria-current="page">Compliance</span>
+          </nav>
+
+          <h1 class="hero-title" id="compHeroHeadline">
+            Governance &amp; <span class="highlight-text">Consumer Protection</span>
+          </h1>
+
+          <p class="hero-description">
+            Statutory adherence, transparent case handling, and respectful communication that protect consumer rights throughout recovery.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-teal">
+              <span>Submit Dispute or Inquiry</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 2: ETHICAL RECOVERY PRINCIPLES
+         ========================================================================= -->
+    <section class="section-wrapper" id="principles" aria-labelledby="principlesHeadline">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Ethical Charter</span>
+          <h2 id="principlesHeadline">Our Core Governance Principles</h2>
+          <p>Every interaction is guided by clear ethical boundaries, mutual respect, and legal integrity.</p>
+        </div>
+
+        <div class="compliance-principles-grid">
+          
+          <div class="compliance-principle-card">
+            <div class="icon-box icon-box-teal" style="margin-bottom: 0.85rem;" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h3>Dignity &amp; Respect</h3>
+            <p>We treat every account holder with dignity. We strictly prohibit threatening language, high pressure, or abusive tactics.</p>
+          </div>
+
+          <div class="compliance-principle-card">
+            <div class="icon-box icon-box-teal" style="margin-bottom: 0.85rem;" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+            </div>
+            <h3>Full Transparency</h3>
+            <p>Plain-language disclosures of outstanding balances, principal amounts, and fees with zero concealed or inflated charges.</p>
+          </div>
+
+          <div class="compliance-principle-card">
+            <div class="icon-box icon-box-teal" style="margin-bottom: 0.85rem;" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 14 14"/>
+              </svg>
+            </div>
+            <h3>Hardship Consideration</h3>
+            <p>Fair evaluation of genuine financial hardship to establish workable repayment arrangements that prevent recurring default.</p>
+          </div>
+
+          <div class="compliance-principle-card">
+            <div class="icon-box icon-box-teal" style="margin-bottom: 0.85rem;" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Strict Accountability</h3>
+            <p>Comprehensive call recording and time-stamped case logs to ensure complete audit readiness and adherence to policy.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 3: COMMUNICATION AND CONSUMER PROTECTION
+         ========================================================================= -->
+    <section class="section-wrapper" id="consumer-rights" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" aria-labelledby="consumerRightsHeadline">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Consumer Rights</span>
+          <h2 id="consumerRightsHeadline">Communication Standards &amp; Consumer Protection</h2>
+          <p>We uphold strict standards established under the Fair Debt Collection Practices Act (FDCPA), Fair Credit Reporting Act (FCRA), and Telephone Consumer Protection Act (TCPA).</p>
+        </div>
+
+        <div class="consumer-protection-grid">
+          
+          <article class="service-detail-card">
+            <div class="icon-box icon-box-teal" style="margin-bottom: 1rem;" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 14 14"/>
+              </svg>
+            </div>
+            <h3>Permissible Contact Windows</h3>
+            <p>Outreach is restricted exclusively to statutory contact hours (8:00 AM – 9:00 PM in the debtor's local time zone) with frequency caps preventing repetitive calls.</p>
+            <ul>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Respectful call frequency limits</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Strict workplace contact opt-out honoring</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Automated caller ID identification</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="service-detail-card">
+            <div class="icon-box icon-box-teal" style="margin-bottom: 1rem;" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+            </div>
+            <h3>Written Debt Validation (30-Day Notice)</h3>
+            <p>Every initial outreach is followed by a formal written notice detailing the original creditor, balance breakdown, and statutory 30-day validation rights.</p>
+            <ul>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Clear 30-day dispute window instructions</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Original creditor identification</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Itemized principal and interest documentation</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="service-detail-card">
+            <div class="icon-box icon-box-teal" style="margin-bottom: 1rem;" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Formal Dispute Handling</h3>
+            <p>If a debt is disputed in writing, collection activities on the disputed portion are promptly paused while our compliance unit verifies documentation with the original creditor.</p>
+            <ul>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Immediate outreach pause upon notice</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Independent review by compliance officers</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Written verification and updated reporting</span>
+              </li>
+            </ul>
+          </article>
+
+        </div>
+
+        <!-- Subtle Non-Legal Advice Disclosure -->
+        <div class="legal-disclaimer-note">
+          <p>
+            <strong>Regulatory Notice:</strong> The information provided on this page outlines Equitas Recovery Partners’ operational compliance practices and general consumer protection policies. It is provided for informational transparency and does not constitute formal legal advice. Consumers seeking legal representation should consult a qualified attorney.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 4: DATA SECURITY, DOCUMENTATION, AND CASE RECORDS
+         ========================================================================= -->
+    <section class="section-wrapper" id="security" aria-labelledby="securityHeadline">
+      <div class="container">
+        
+        <div class="data-governance-grid">
+          
+          <div class="data-governance-content">
+            <span class="section-tag">Information Security</span>
+            <h2 id="securityHeadline">Data Security, Documentation &amp; Case Records</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+              Protecting confidential debtor and client data is fundamental to our practice. We enforce multi-layer technical safeguards and strict documentation hygiene.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <div class="reporting-feature-card">
+                <div class="icon-box icon-box-teal" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>AES-256 Encrypted Infrastructure</h3>
+                  <p>All client files and debtor communications are protected with end-to-end AES-256 encryption at rest and in transit.</p>
+                </div>
+              </div>
+
+              <div class="reporting-feature-card">
+                <div class="icon-box icon-box-teal" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Role-Based Access Controls</h3>
+                  <p>Strict least-privilege security permissions ensure sensitive account records are accessible only by authorized officers.</p>
+                </div>
+              </div>
+
+              <div class="reporting-feature-card">
+                <div class="icon-box icon-box-teal" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Permanent Audit Retention &amp; Release</h3>
+                  <p>Complete archival of settlement receipts, payment logs, and prompt delivery of paid-in-full release documentation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="data-governance-media">
+            <div class="reporting-media-frame">
+              <img src="assets/images/compliance-page-security.jpg" alt="Data security and compliance auditors reviewing encrypted account records on secure devices." width="1280" height="960" loading="lazy">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 5: COMPLIANCE CONTACT / CTA
+         ========================================================================= -->
+    <section class="section-wrapper cta-section" id="contact" aria-labelledby="ctaHeadline">
+      <div class="container">
+        <div class="cta-container-card">
+          <div class="cta-content-grid">
+            
+            <div class="cta-text-side">
+              <span class="cta-eyebrow">Direct Inquiries</span>
+              <h2 id="ctaHeadline">Contact the Compliance Office</h2>
+              <p>
+                If you have questions regarding an account, wish to file a formal dispute, or need to verify documentation, our Compliance &amp; Consumer Advocacy Desk is available to assist you.
+              </p>
+
+              <div class="cta-contact-pills">
+                <div class="contact-pill-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span>1-800-555-0199</span>
+                </div>
+                <div class="contact-pill-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                  <span>compliance@equitasrecovery.com</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="cta-form-box">
+              <h3>Submit Compliance Inquiry</h3>
+              <p class="form-subtitle">Confidential submission directly to the Compliance Unit.</p>
+
+              <form class="cta-quick-form" id="consultationForm">
+                <div class="form-group">
+                  <label for="orgName" class="form-label">Full Name or Organization</label>
+                  <input type="text" id="orgName" class="form-input" placeholder="e.g. John Doe / Apex Corp" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">Email Address</label>
+                  <input type="email" id="contactEmail" class="form-input" placeholder="name@email.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="recoveryType" class="form-label">Inquiry Category</label>
+                  <select id="recoveryType" class="form-select" required>
+                    <option value="" disabled selected>Select category</option>
+                    <option value="dispute">Formal Balance Dispute</option>
+                    <option value="validation">Debt Validation Request</option>
+                    <option value="hardship">Financial Hardship Review</option>
+                    <option value="compliance_general">General Compliance Inquiry</option>
+                  </select>
+                </div>
+
+                <div class="form-status-msg" role="status"></div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                  <span>Submit to Compliance Desk</span>
+                </button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       SHARED FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-main-grid">
+        <div class="footer-brand-col">
+          <div class="brand-logo">
+            <div class="logo-symbol" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title">EQUITAS</span>
+              <span class="logo-subtitle">Recovery</span>
+            </div>
+          </div>
+          <p>
+            Ethical, transparent, and compliant receivables management tailored by business tier and industry needs.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#consumer">Consumer Recovery</a></li>
+            <li><a href="services.html#commercial">Commercial (B2B)</a></li>
+            <li><a href="services.html#management">Account Management</a></li>
+            <li><a href="#dashboard">Client Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Governance</h4>
+          <ul class="footer-links">
+            <li><a href="compliance.html#principles">Ethical Principles</a></li>
+            <li><a href="compliance.html#consumer-rights">Consumer Rights</a></li>
+            <li><a href="compliance.html#security">Data Security</a></li>
+            <li><a href="compliance.html#contact">Dispute Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Desk</h4>
+          <ul class="footer-links">
+            <li><a href="#contact">Direct: 1-800-555-0199</a></li>
+            <li><a href="#contact">compliance@equitasrecovery.com</a></li>
+            <li><a href="#contact">Dispute Desk</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-compliance-banner">
+        <h5>Professional Disclosure &amp; Consumer Rights</h5>
+        <p>
+          This is a communication from a professional debt recovery agency. Equitas operates in accordance with applicable federal and state collection standards with commitment to fair, transparent, and respectful communication.
+        </p>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Equitas Recovery Partners LLC. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#privacy">Privacy</a>
+          <a href="#terms">Terms</a>
+          <a href="#security">Security</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back To Top -->
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="m18 15-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

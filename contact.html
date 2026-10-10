@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Consultations | Equitas Recovery Partners</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/equitas-mark.svg">
+  <link rel="apple-touch-icon" href="assets/images/equitas-mark.svg">
+  <meta name="description" content="Get in touch with Equitas Recovery Partners. Request an executive debt recovery consultation, discuss corporate accounts, or speak with our client support team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="mainHeader">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Equitas Recovery Partners Homepage">
+        <div class="logo-symbol" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">EQUITAS</span>
+          <span class="logo-subtitle">Recovery</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" id="homeDropdownBtn" aria-haspopup="true" aria-expanded="false">
+              <span>Home</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6"/>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="index.html" class="dropdown-item">
+                <span>Home 1 (Corporate)</span>
+              </a>
+              <a href="home-2.html" class="dropdown-item">
+                <span>Home 2 (Enterprise)</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="compliance.html" class="nav-link">Compliance</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Utilities -->
+      <div class="header-actions">
+        <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR">
+          <span class="rtl-badge">RTL</span>
+        </button>
+
+        <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle theme" title="Toggle Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+          </svg>
+        </button>
+
+        <a href="login.html" class="btn btn-secondary btn-sm" id="clientPortalBtn">
+          <span>Portal</span>
+        </a>
+
+        <a href="#consultFormSection" class="btn btn-primary btn-sm" id="headerInquiryBtn">
+          <span>Get Started</span>
+        </a>
+
+        <button type="button" class="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" role="dialog" aria-modal="true" aria-label="Mobile Menu">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="logo-symbol" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">EQUITAS</span>
+        </div>
+      </div>
+      <button type="button" class="drawer-close-btn" aria-label="Close menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-links">
+      <div class="drawer-home-group">
+        <button type="button" class="drawer-link drawer-home-toggle" aria-controls="drawerHomeMenu" aria-expanded="false">
+          <span>Home</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>
+        </button>
+        <div class="drawer-home-menu" id="drawerHomeMenu" hidden>
+          <a href="index.html" class="drawer-link" data-home-page="index.html">Home 1 (Corporate)</a>
+          <a href="home-2.html" class="drawer-link" data-home-page="home-2.html">Home 2 (Enterprise)</a>
+        </div>
+      </div>
+      <a href="services.html" class="drawer-link">Services</a>
+      <a href="compliance.html" class="drawer-link">Compliance &amp; Licensing</a>
+      <a href="pricing.html" class="drawer-link">Pricing &amp; Plans</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+      <a href="contact.html" class="drawer-link active">Contact</a>
+      <a href="dashboard.html" class="drawer-link">Dashboard</a>
+    </div>
+
+    <div class="drawer-actions">
+      <div class="drawer-controls-row">
+        <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle theme in drawer" style="width: 48%; height: 38px;">
+          <span>Theme</span>
+        </button>
+        <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle RTL in drawer" style="width: 48%; height: 38px;">
+          <span>RTL</span>
+        </button>
+      </div>
+      <a href="login.html" class="btn btn-secondary btn-block">Client Portal</a>
+      <a href="#consultFormSection" class="btn btn-primary btn-block">Request Consultation</a>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- SECTION 1: CONTACT HERO -->
+    <section class="inner-hero contact-hero" id="contactHero" aria-labelledby="contactHeroHeadline">
+      <div class="container">
+        <div class="inner-hero-content">
+          <nav class="page-breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-sep" aria-hidden="true">/</span>
+            <span aria-current="page">Contact</span>
+          </nav>
+
+          <h1 class="hero-title" id="contactHeroHeadline">
+            Speak With Our <span class="highlight-text">Recovery Specialists</span>
+          </h1>
+
+          <p class="hero-description">
+            Request a confidential portfolio review, discuss placement options, or reach a dedicated account executive.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#consultFormSection" class="btn btn-teal">
+              <span>Start Consultation</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: CONTACT INFORMATION -->
+    <section class="section" id="contactInfo">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge badge-accent">Direct Access</div>
+          <h2>Dedicated Communication Desks</h2>
+          <p class="section-subtitle">
+            Connect directly with the appropriate department for commercial inquiries, client support, or account administration.
+          </p>
+        </div>
+
+        <div class="contact-info-grid">
+          <!-- Card 1: Phone Inquiries -->
+          <div class="contact-info-card">
+            <div class="icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <h3>Telephone Desks</h3>
+            <p class="card-subtext">Direct voice channels with trained operational staff.</p>
+            <div class="contact-info-list">
+              <div class="contact-item-row">
+                <div class="contact-item-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Client Inquiries &amp; Sales</strong>
+                  <a href="tel:+18005550199">(800) 555-0199</a>
+                </div>
+              </div>
+              <div class="contact-item-row">
+                <div class="contact-item-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Account Holder Support</strong>
+                  <a href="tel:+18005550188">(800) 555-0188</a>
+                </div>
+              </div>
+              <div class="contact-item-row">
+                <div class="contact-item-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Compliance &amp; Legal Desk</strong>
+                  <a href="tel:+18005550177">(800) 555-0177</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Email Desks -->
+          <div class="contact-info-card">
+            <div class="icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <h3>Electronic Inquiries</h3>
+            <p class="card-subtext">Secure email communication with tracked ticket responses.</p>
+            <div class="contact-info-list">
+              <div class="contact-item-row">
+                <div class="contact-item-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Business Consultations</strong>
+                  <a href="mailto:consult@equitasrecovery.com">consult@equitasrecovery.com</a>
+                </div>
+              </div>
+              <div class="contact-item-row">
+                <div class="contact-item-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Client Partner Support</strong>
+                  <a href="mailto:support@equitasrecovery.com">support@equitasrecovery.com</a>
+                </div>
+              </div>
+              <div class="contact-item-row">
+                <div class="contact-item-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="m9 15 2 2 4-4"/></svg>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Dispute &amp; Validation</strong>
+                  <a href="mailto:disputes@equitasrecovery.com">disputes@equitasrecovery.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Headquarters & Hours -->
+          <div class="contact-info-card">
+            <div class="icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3>Headquarters &amp; Hours</h3>
+            <p class="card-subtext">Centralized corporate operations and data administration.</p>
+            <div class="contact-info-list">
+              <div class="contact-item-row">
+                <div class="contact-item-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Executive Headquarters</strong>
+                  <span>100 Financial Plaza, Chicago, IL</span>
+                </div>
+              </div>
+              <div class="contact-item-row">
+                <div class="contact-item-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Operational Hours</strong>
+                  <span>Mon – Fri: 8:00 AM – 6:00 PM CST</span>
+                </div>
+              </div>
+              <div class="contact-item-row">
+                <div class="contact-item-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Client Portal Access</strong>
+                  <span>24/7 Secure Dashboard Login</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-map-panel">
+          <div class="contact-map-heading">
+            <h3>Executive Headquarters</h3>
+            <a class="btn btn-secondary btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=100%20Financial%20Plaza%2C%20Chicago%2C%20IL" target="_blank" rel="noopener noreferrer">
+              <span>Get Directions</span>
+            </a>
+          </div>
+          <div class="contact-map-frame">
+            <iframe
+              src="https://www.google.com/maps?q=100%20Financial%20Plaza%2C%20Chicago%2C%20IL&amp;output=embed"
+              title="Map to Equitas Recovery headquarters at 100 Financial Plaza, Chicago, IL"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: BUSINESS CONSULTATION FORM -->
+    <section class="section consultation-form-section" id="consultFormSection">
+      <div class="container">
+        <div class="contact-form-layout">
+          
+          <div class="form-intro-column">
+            <div class="badge badge-accent">Partner Onboarding</div>
+            <h2>Request a Confidential Business Consultation</h2>
+            <p style="color: var(--text-secondary); line-height: 1.55; margin-bottom: 1.5rem;">
+              Complete the form to connect with our client solutions team. We will review your account volume, evaluate regulatory scope, and provide a transparent recovery strategy.
+            </p>
+
+            <div style="background-color: var(--bg-subtle); border: 1px solid var(--border-color-subtle); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1.5rem;">
+              <h4 style="font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" color="var(--accent-teal)">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+                Confidentiality Assurance
+              </h4>
+              <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.45;">
+                All account data submitted is protected under enterprise NDA protocols and strict data encryption standards. We never disclose creditor inquiries.
+              </p>
+            </div>
+
+            <div style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.5;">
+              <strong style="color: var(--text-secondary);">Looking to make an individual payment?</strong><br>
+              Consumers can utilize our self-service resolution portal or call the consumer service line for secure assistance.
+            </div>
+          </div>
+
+          <div class="form-wrapper-box">
+            <h3 style="font-size: 1.3rem; margin-bottom: 0.35rem;">Consultation Request Form</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">Fields marked with an asterisk (*) are required.</p>
+            
+            <form class="contact-form-grid" id="mainContactForm" novalidate>
+              
+              <!-- Field 1: Full Name -->
+              <div class="form-group">
+                <label for="contactFullName" class="form-label">Full Name *</label>
+                <input type="text" id="contactFullName" name="fullName" class="form-input" placeholder="e.g. Sarah Jenkins" required aria-required="true">
+                <span class="form-help-text">Enter your first and last name</span>
+              </div>
+
+              <!-- Field 2: Company Name -->
+              <div class="form-group">
+                <label for="contactCompanyName" class="form-label">Company Name *</label>
+                <input type="text" id="contactCompanyName" name="companyName" class="form-input" placeholder="e.g. Apex Manufacturing LLC" required aria-required="true">
+                <span class="form-help-text">Your organization name</span>
+              </div>
+
+              <!-- Field 3: Business Email -->
+              <div class="form-group">
+                <label for="contactBusinessEmail" class="form-label">Business Email *</label>
+                <input type="email" id="contactBusinessEmail" name="businessEmail" class="form-input" placeholder="sjenkins@company.com" required aria-required="true">
+                <span class="form-help-text">Work email for consultation details</span>
+              </div>
+
+              <!-- Field 4: Phone Number -->
+              <div class="form-group">
+                <label for="contactPhoneNumber" class="form-label">Phone Number *</label>
+                <input type="tel" id="contactPhoneNumber" name="phoneNumber" class="form-input" placeholder="(555) 000-0000" required aria-required="true">
+                <span class="form-help-text">Direct business telephone number</span>
+              </div>
+
+              <!-- Field 5: Service of Interest -->
+              <div class="form-group form-full-width">
+                <label for="contactServiceInterest" class="form-label">Service of Interest *</label>
+                <select id="contactServiceInterest" name="serviceInterest" class="form-select" required aria-required="true">
+                  <option value="">Select the primary solution required...</option>
+                  <option value="Commercial B2B Debt Recovery">Commercial B2B Debt Recovery</option>
+                  <option value="Consumer Debt Management">Consumer Debt Management</option>
+                  <option value="First-Party Pre-Collect Workflow">First-Party Pre-Collect Workflow</option>
+                  <option value="Portfolio Compliance &amp; Audit">Portfolio Compliance &amp; Audit</option>
+                  <option value="Custom Enterprise Recovery Plan">Custom Enterprise Recovery Plan</option>
+                </select>
+                <span class="form-help-text">Select the category that best matches your placement needs</span>
+              </div>
+
+              <!-- Field 6: Message -->
+              <div class="form-group form-full-width">
+                <label for="contactMessage" class="form-label">Message / Account Details *</label>
+                <textarea id="contactMessage" name="message" class="form-textarea" rows="4" placeholder="Please provide estimated placement balance, volume of accounts, or specific compliance questions..." required aria-required="true"></textarea>
+                <span class="form-help-text">Include any timeline or special integration requests</span>
+              </div>
+
+              <!-- Field 7: Submit Button -->
+              <div class="form-full-width">
+                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; justify-content: center;">
+                  <span>Submit Consultation Request</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Status Feedback -->
+              <div class="form-full-width">
+                <div class="form-status-msg" id="contactFormStatus" role="status" aria-live="polite"></div>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: SUPPORT AND COMMUNICATION PROCESS -->
+    <section class="section" id="supportProcess">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge badge-accent">Clear Timeline</div>
+          <h2>Support &amp; Communication Process</h2>
+          <p class="section-subtitle">
+            What happens after you reach out? Here is how our team reviews, confirms, and activates your account.
+          </p>
+        </div>
+
+        <div class="contact-process-grid">
+          <div class="contact-process-card">
+            <div class="process-badge-step">01</div>
+            <h3>Intake &amp; Verification</h3>
+            <p>
+              Your consultation request is reviewed within 24 business hours. We verify organizational identity and clarify placement scope.
+            </p>
+          </div>
+
+          <div class="contact-process-card">
+            <div class="process-badge-step">02</div>
+            <h3>Strategic Assessment</h3>
+            <p>
+              A senior recovery specialist prepares a custom proposal with transparent fee structures, recovery workflows, and reporting terms.
+            </p>
+          </div>
+
+          <div class="contact-process-card">
+            <div class="process-badge-step">03</div>
+            <h3>Dedicated Activation</h3>
+            <p>
+              Once approved, you receive encrypted client portal credentials, an assigned account manager, and immediate portfolio onboarding.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: FINAL CTA -->
+    <section class="section cta-section" id="contactFinalCta">
+      <div class="container">
+        <div class="cta-container-card text-center" style="max-width: 860px; margin: 0 auto;">
+          <div class="cta-eyebrow">
+            Client Assurance
+          </div>
+          <h2 style="font-size: clamp(1.6rem, 3.2vw, 2.2rem); margin-bottom: 0.85rem; color: #ffffff;">
+            Ready to Protect Your Cash Flow with Ethical Recovery?
+          </h2>
+          <p style="color: #cbd5e1; max-width: 620px; margin: 0 auto 1.75rem auto; font-size: 0.98rem; line-height: 1.55;">
+            Our specialists are standing by to answer compliance questions, evaluate legacy portfolios, or schedule a custom walkthrough of our secure portal.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="#consultFormSection" class="btn btn-primary btn-lg">
+              <span>Submit Your Inquiry Above</span>
+            </a>
+            <a href="tel:+18005550199" class="btn btn-outline-white btn-lg">
+              <span>Call (800) 555-0199</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+      <div class="footer-main-grid">
+        <div class="footer-brand-col">
+          <div class="brand-logo">
+            <div class="logo-symbol" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title">EQUITAS</span>
+              <span class="logo-subtitle">Recovery</span>
+            </div>
+          </div>
+          <p>
+            Equitas Recovery Partners provides compliant, transparent, and respectful accounts receivable management services for commercial creditors and consumer organizations nationwide.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home 1 (Corporate)</a></li>
+            <li><a href="home-2.html">Home 2 (Enterprise)</a></li>
+            <li><a href="services.html">Services Overview</a></li>
+            <li><a href="compliance.html">Compliance &amp; Licensing</a></li>
+            <li><a href="pricing.html">Pricing &amp; Plans</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#commercial">Commercial Recovery</a></li>
+            <li><a href="services.html#consumer">Consumer Debt Resolution</a></li>
+            <li><a href="services.html#process">Account Management</a></li>
+            <li><a href="compliance.html#principles">Ethical Standards</a></li>
+            <li><a href="compliance.html#security">Data Governance</a></li>
+            <li><a href="contact.html">Request Consultation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact &amp; Support</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+18005550199">(800) 555-0199</a></li>
+            <li><a href="mailto:support@equitasrecovery.com">support@equitasrecovery.com</a></li>
+            <li><a href="contact.html">Corporate Contact Form</a></li>
+            <li><a href="contact.html">Client Access Portal</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-compliance-banner">
+        <h5>Regulatory Disclosure &amp; Notice</h5>
+        <p>
+          This is a communication from a debt collection agency. Any information obtained will be used for that purpose. Equitas Recovery Partners operates in strict compliance with the Fair Debt Collection Practices Act (FDCPA), Regulation F, and applicable state licensing statutes. General information provided on this website does not constitute formal legal counsel.
+        </p>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Equitas Recovery Partners, LLC. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="compliance.html">Privacy Policy</a>
+          <a href="compliance.html">Terms of Service</a>
+          <a href="compliance.html">Consumer Protections</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m18 15-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equitas Recovery Partners | Ethical & Compliant Debt Recovery</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/equitas-mark.svg">
+  <link rel="apple-touch-icon" href="assets/images/equitas-mark.svg">
+  <meta name="description" content="Equitas Recovery Partners delivers ethical, compliant, and transparent debt recovery for commercial and consumer portfolios.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       SHARED HEADER
+       ========================================================================= -->
+  <header class="site-header" id="mainHeader">
+    <div class="container header-container">
+      
+      <!-- Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Equitas Home">
+        <div class="logo-symbol" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">EQUITAS</span>
+          <span class="logo-subtitle">Recovery</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active" id="homeDropdownBtn" aria-haspopup="true" aria-expanded="false">
+              <span>Home</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6"/>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="index.html" class="dropdown-item active">
+                <span>Home 1 (Corporate)</span>
+                <span class="dropdown-badge">Active</span>
+              </a>
+              <a href="home-2.html" class="dropdown-item">
+                <span>Home 2 (Enterprise)</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="compliance.html" class="nav-link">Compliance</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Utilities -->
+      <div class="header-actions">
+        <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR">
+          <span class="rtl-badge">RTL</span>
+        </button>
+
+        <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle theme" title="Toggle Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+          </svg>
+        </button>
+
+        <a href="login.html" class="btn btn-secondary btn-sm" id="clientPortalBtn">
+          <span>Portal</span>
+        </a>
+
+        <a href="contact.html" class="btn btn-primary btn-sm" id="headerInquiryBtn">
+          <span>Contact Us</span>
+        </a>
+
+        <button type="button" class="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" role="dialog" aria-modal="true" aria-label="Mobile Menu">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="logo-symbol" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">EQUITAS</span>
+        </div>
+      </div>
+      <button type="button" class="drawer-close-btn" aria-label="Close menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-links">
+      <div class="drawer-home-group">
+        <button type="button" class="drawer-link drawer-home-toggle" aria-controls="drawerHomeMenu" aria-expanded="false">
+          <span>Home</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>
+        </button>
+        <div class="drawer-home-menu" id="drawerHomeMenu" hidden>
+          <a href="index.html" class="drawer-link" data-home-page="index.html">Home 1 (Corporate)</a>
+          <a href="home-2.html" class="drawer-link" data-home-page="home-2.html">Home 2 (Enterprise)</a>
+        </div>
+      </div>
+      <a href="services.html" class="drawer-link">Services</a>
+      <a href="compliance.html" class="drawer-link">Compliance &amp; Licensing</a>
+      <a href="pricing.html" class="drawer-link">Pricing &amp; Plans</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+      <a href="contact.html" class="drawer-link">Contact</a>
+      <a href="dashboard.html" class="drawer-link">Dashboard</a>
+    </div>
+
+    <div class="drawer-actions">
+      <div class="drawer-controls-row">
+        <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle theme in drawer" style="width: 48%; height: 38px;">
+          <span>Theme</span>
+        </button>
+        <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle RTL in drawer" style="width: 48%; height: 38px;">
+          <span>RTL</span>
+        </button>
+      </div>
+      <a href="login.html" class="btn btn-secondary btn-block">Client Portal</a>
+      <a href="contact.html" class="btn btn-primary btn-block">Schedule Consultation</a>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- =========================================================================
+         SECTION 1: HERO
+         ========================================================================= -->
+    <section class="hero-section" id="hero" aria-labelledby="heroHeadline">
+      <div class="hero-background-pattern" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span>100% Ethical &amp; Compliant</span>
+            </div>
+
+            <h1 class="hero-title" id="heroHeadline">
+              Ethical &amp; Transparent <span class="highlight-text">Debt Recovery</span>
+            </h1>
+
+            <p class="hero-description">
+              We help businesses recover outstanding accounts through respectful mediation, total transparency, and strict regulatory adherence—safeguarding your brand reputation.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#contact" class="btn btn-teal">
+                <span>Request Consultation</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+              <a href="#services" class="btn btn-outline-white">
+                <span>Our Solutions</span>
+              </a>
+            </div>
+
+            <div class="hero-metrics-strip">
+              <div class="metric-item">
+                <span class="metric-value">99.4%</span>
+                <span class="metric-label">Dispute-Free Settlements</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-value">100%</span>
+                <span class="metric-label">Compliance Audited</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-value">24/7</span>
+                <span class="metric-label">Secure Client Access</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media-card">
+            <div class="hero-image-frame">
+              <img src="assets/images/hero-consultation.jpg" alt="Equitas recovery advisors in a professional client consultation." width="1280" height="720" loading="eager">
+            </div>
+            
+            <div class="hero-floating-badge">
+              <div class="badge-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Reputation First</h4>
+                <p>Preserving your valuable business relationships.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 2: OUR SERVICES
+         ========================================================================= -->
+    <section class="section-wrapper services-section" id="services" aria-labelledby="servicesHeadline">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Services</span>
+          <h2 id="servicesHeadline">Tailored Recovery Solutions</h2>
+          <p>Practical and respectful receivables management structured for sustainable results.</p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Consumer -->
+          <article class="service-card">
+            <div class="service-card-header">
+              <div class="icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <span class="service-tag">Consumer</span>
+            </div>
+            
+            <h3>Consumer Debt Recovery</h3>
+            <p class="service-desc">
+              Respectful engagement for consumer portfolios, establishing realistic payments.
+            </p>
+
+            <ul class="service-features-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Hardship assessment &amp; payment scheduling</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>FDCPA-compliant multi-channel notices</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Prompt balance documentation &amp; verification</span>
+              </li>
+            </ul>
+
+            <div class="service-card-footer">
+              <a href="#contact" class="btn btn-secondary btn-block">Inquire About Consumer</a>
+            </div>
+          </article>
+
+          <!-- Commercial -->
+          <article class="service-card">
+            <div class="service-card-header">
+              <div class="icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="14" x="2" y="7" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                </svg>
+              </div>
+              <span class="service-tag">B2B Commercial</span>
+            </div>
+            
+            <h3>Commercial Debt Recovery</h3>
+            <p class="service-desc">
+              Strategic B2B receivables resolution that recovers revenue while protecting vendor ties.
+            </p>
+
+            <ul class="service-features-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Executive-level invoice mediation</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Contract dispute settlement</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Structured enterprise repayment agreements</span>
+              </li>
+            </ul>
+
+            <div class="service-card-footer">
+              <a href="#contact" class="btn btn-secondary btn-block">Inquire About Commercial</a>
+            </div>
+          </article>
+
+          <!-- Account Management -->
+          <article class="service-card">
+            <div class="service-card-header">
+              <div class="icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 3v18h18"/>
+                  <path d="m19 9-5 5-4-4-3 3"/>
+                </svg>
+              </div>
+              <span class="service-tag">Management</span>
+            </div>
+            
+            <h3>Account &amp; Ledger Care</h3>
+            <p class="service-desc">
+              Early delinquency mitigation and automated reconciliation for high-volume portfolios.
+            </p>
+
+            <ul class="service-features-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Early-stage reminder workflows</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Real-time dashboard tracking &amp; syncing</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Continuous compliance data scrubbing</span>
+              </li>
+            </ul>
+
+            <div class="service-card-footer">
+              <a href="#contact" class="btn btn-secondary btn-block">Inquire About Account Care</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 3: ETHICAL APPROACH
+         ========================================================================= -->
+    <section class="section-wrapper approach-section" id="approach" aria-labelledby="approachHeadline">
+      <div class="container">
+        <div class="approach-grid">
+          
+          <div class="approach-media">
+            <div class="approach-image-wrapper">
+              <img src="assets/images/ethical-approach.jpg" alt="Equitas account manager discussing transparent account resolution." width="1280" height="960" loading="lazy">
+            </div>
+
+            <div class="approach-quote-box">
+              <p>“Respectful communication consistently produces higher settlement rates and preserves reputation.”</p>
+              <span class="quote-author">— Equitas Ethical Charter</span>
+            </div>
+          </div>
+
+          <div class="approach-content">
+            <span class="section-tag">Ethical Philosophy</span>
+            <h2 id="approachHeadline">Built on Dignity, Transparency &amp; Compliance</h2>
+            <p class="approach-lead">
+              We reject high-pressure tactics in favor of verified facts, respectful dialogue, and practical financial solutions.
+            </p>
+
+            <div class="pillars-stack">
+              <div class="pillar-item">
+                <div class="icon-box icon-box-teal" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Respectful Outreach</h3>
+                  <p>Trained mediators who listen carefully and resolve hardship with dignity.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="icon-box icon-box-teal" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Transparent Terms</h3>
+                  <p>Itemized ledger breakdowns with zero undisclosed charges or hidden fees.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="icon-box icon-box-teal" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 14 14"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Sustainable Solutions</h3>
+                  <p>Achievable payment schedules structured to ensure complete account resolution.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 4: HOW RECOVERY WORKS
+         ========================================================================= -->
+    <section class="section-wrapper process-section" id="process" aria-labelledby="processHeadline">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Our Workflow</span>
+          <h2 id="processHeadline">How Recovery Works</h2>
+          <p>A simple, structured 4-step recovery workflow for total transparency.</p>
+        </div>
+
+        <div class="process-grid">
+          
+          <div class="process-step-card">
+            <div class="step-header">
+              <span class="step-number">01</span>
+              <div class="icon-box" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="17 8 12 3 7 8"/>
+                </svg>
+              </div>
+            </div>
+            <h3>Intake &amp; Validation</h3>
+            <p>Encrypted data transfer and thorough debt validation prior to any communication.</p>
+            <span class="step-badge">Step 1: Audit</span>
+          </div>
+
+          <div class="process-step-card">
+            <div class="step-header">
+              <span class="step-number">02</span>
+              <div class="icon-box" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+            </div>
+            <h3>Respectful Notice</h3>
+            <p>Clear, compliant notices and courteous initial contact to open resolution options.</p>
+            <span class="step-badge">Step 2: Contact</span>
+          </div>
+
+          <div class="process-step-card">
+            <div class="step-header">
+              <span class="step-number">03</span>
+              <div class="icon-box" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="18" height="18" x="3" y="3" rx="2"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+              </div>
+            </div>
+            <h3>Structured Settlement</h3>
+            <p>Agreed-upon payment terms confirmed in writing with automated receipt schedules.</p>
+            <span class="step-badge">Step 3: Settlement</span>
+          </div>
+
+          <div class="process-step-card">
+            <div class="step-header">
+              <span class="step-number">04</span>
+              <div class="icon-box" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+              </div>
+            </div>
+            <h3>Reconciliation &amp; Closure</h3>
+            <p>Prompt fund disbursement to clients and paid-in-full release documentation to debtors.</p>
+            <span class="step-badge">Step 4: Closure</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 5: COMPLIANCE AND TRUST
+         ========================================================================= -->
+    <section class="section-wrapper compliance-section" id="compliance" aria-labelledby="complianceHeadline">
+      <div class="container">
+        <div class="compliance-grid">
+          
+          <div class="compliance-content">
+            <span class="section-tag">Governance</span>
+            <h2 id="complianceHeadline">Compliance &amp; Data Security</h2>
+            <p class="compliance-lead">
+              Our operations, communications, and audit trails adhere strictly to applicable consumer finance standards.
+            </p>
+
+            <div class="compliance-features-grid">
+              <div class="compliance-box">
+                <div class="icon-box" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <h3>Fair Practices</h3>
+                <p>Strict operational adherence to FDCPA, FCRA, and TCPA standards.</p>
+              </div>
+
+              <div class="compliance-box">
+                <div class="icon-box" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                </div>
+                <h3>Data Encryption</h3>
+                <p>AES-256 encrypted storage with role-based access restrictions.</p>
+              </div>
+
+              <div class="compliance-box">
+                <div class="icon-box" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                  </svg>
+                </div>
+                <h3>Quality Auditing</h3>
+                <p>100% communication monitoring for courtesy and legal accuracy.</p>
+              </div>
+
+              <div class="compliance-box">
+                <div class="icon-box" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="18" height="18" x="3" y="3" rx="2"/>
+                    <path d="M3 9h18"/>
+                  </svg>
+                </div>
+                <h3>Client Portal</h3>
+                <p>On-demand real-time updates and downloadable audit logs.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="compliance-media">
+            <div class="compliance-image-frame">
+              <img src="assets/images/compliance-trust.jpg" alt="Equitas compliance and security overview." width="1280" height="960" loading="lazy">
+            </div>
+            
+            <div class="compliance-security-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              <span>Encrypted &amp; Audit-Ready</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 6: FINAL CTA
+         ========================================================================= -->
+    <section class="section-wrapper cta-section" id="contact" aria-labelledby="ctaHeadline">
+      <div class="container">
+        <div class="cta-container-card">
+          <div class="cta-content-grid">
+            
+            <div class="cta-text-side">
+              <span class="cta-eyebrow">Get Started</span>
+              <h2 id="ctaHeadline">Recover Receivables Responsibly</h2>
+              <p>
+                Partner with an ethical recovery agency that protects your corporate brand while accelerating cash flow. Contact us today.
+              </p>
+
+              <div class="cta-contact-pills">
+                <div class="contact-pill-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span>1-800-555-0199</span>
+                </div>
+                <div class="contact-pill-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                  <span>inquiry@equitasrecovery.com</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="cta-form-box">
+              <h3>Request Consultation</h3>
+              <p class="form-subtitle">Confidential inquiry and portfolio evaluation.</p>
+
+              <form class="cta-quick-form" id="consultationForm">
+                <div class="form-group">
+                  <label for="orgName" class="form-label">Company Name</label>
+                  <input type="text" id="orgName" class="form-input" placeholder="e.g. Apex Corp" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">Work Email</label>
+                  <input type="email" id="contactEmail" class="form-input" placeholder="name@company.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="recoveryType" class="form-label">Portfolio Type</label>
+                  <select id="recoveryType" class="form-select" required>
+                    <option value="" disabled selected>Select category</option>
+                    <option value="commercial">Commercial (B2B)</option>
+                    <option value="consumer">Consumer (B2C)</option>
+                    <option value="portfolio_management">Ledger Management</option>
+                  </select>
+                </div>
+
+                <div class="form-status-msg" role="status"></div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                  <span>Submit Request</span>
+                </button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       SHARED FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-main-grid">
+        <div class="footer-brand-col">
+          <div class="brand-logo">
+            <div class="logo-symbol" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title">EQUITAS</span>
+              <span class="logo-subtitle">Recovery</span>
+            </div>
+          </div>
+          <p>
+            Ethical, transparent, and compliant debt recovery solutions for modern businesses.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Consumer Recovery</a></li>
+            <li><a href="#services">Commercial (B2B)</a></li>
+            <li><a href="#services">Account Care</a></li>
+            <li><a href="#dashboard">Client Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Governance</h4>
+          <ul class="footer-links">
+            <li><a href="#compliance">Regulatory Standards</a></li>
+            <li><a href="#approach">Ethical Charter</a></li>
+            <li><a href="#compliance">Data Privacy</a></li>
+            <li><a href="#contact">Dispute Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="#contact">1-800-555-0199</a></li>
+            <li><a href="#contact">inquiry@equitasrecovery.com</a></li>
+            <li><a href="#contact">Support Portal</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-compliance-banner">
+        <h5>Professional Disclosure &amp; Consumer Rights</h5>
+        <p>
+          This is a communication from a professional debt recovery agency. Equitas operates in accordance with applicable federal and state collection standards with commitment to fair and respectful communication.
+        </p>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Equitas Recovery Partners LLC. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#privacy">Privacy</a>
+          <a href="#terms">Terms</a>
+          <a href="#security">Security</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back To Top -->
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="m18 15-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
